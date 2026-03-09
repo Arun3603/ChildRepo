@@ -1,0 +1,52 @@
+.page-hero {
+  background: linear-gradient(135deg, #1a5f4a 0%, #0d3b2e 100%);
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-hero p {
+  opacity: 0.9;
+}
+
+.news-section {
+  padding: 3rem 0;
+}
+
+.news-list {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 4px solid #1a5f4a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.news-date {
+  color: #e8b923;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-card h3 {
+  color: #1a5f4a;
+  margin-bottom: 0.5rem;
+}
+
+.news-card p {
+  color: #666;
+  line-height: 1.5;
+}

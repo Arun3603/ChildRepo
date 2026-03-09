@@ -1,0 +1,23 @@
+<section class="page-hero">
+  <div class="container">
+    <h1>Trustee List</h1>
+    <p>Our board members</p>
+  </div>
+</section>
+
+<section class="trustees-section">
+  <div class="container">
+    <div class="trustees-grid">
+      @for (trustee of trustees; track trustee.name) {
+        <div class="trustee-card">
+          <div class="trustee-avatar">
+            {{ trustee.name.charAt(0) }}{{ (trustee.name.split(' ')[1] || '').charAt(0) }}
+          </div>
+          <h3>{{ trustee.name }}</h3>
+          <p class="trustee-role">{{ trustee.role }}</p>
+          <p class="trustee-bio">{{ trustee.bio }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

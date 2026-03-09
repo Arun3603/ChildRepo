@@ -1,0 +1,38 @@
+<section class="page-hero">
+  <div class="container">
+    <h1>Donate</h1>
+    <p>Your contribution makes a difference</p>
+  </div>
+</section>
+
+<section class="donation-section">
+  <div class="container">
+    <div class="donation-card">
+      <h2>Support Child Rights</h2>
+      <p class="donation-intro">Every donation helps us protect and promote the rights of children. Choose an amount or enter a custom value.</p>
+      
+      <div class="amount-options">
+        @for (amount of amounts; track amount) {
+          <button 
+            class="amount-btn" 
+            [class.selected]="selectedAmount === amount"
+            (click)="selectAmount(amount)">
+            ₹{{ amount.toLocaleString('en-IN') }}
+          </button>
+        }
+      </div>
+
+      <div class="donation-info">
+        <h3>Where your donation goes</h3>
+        <ul>
+          <li>Education programmes for underprivileged children</li>
+          <li>Health camps and nutrition support</li>
+          <li>Anti-trafficking and child labour initiatives</li>
+          <li>Community empowerment programmes</li>
+        </ul>
+      </div>
+
+      <p class="donation-note">For bank transfer or cheque donations, please contact us at thechildtrust&#64;gmail.com</p>
+    </div>
+  </div>
+</section>

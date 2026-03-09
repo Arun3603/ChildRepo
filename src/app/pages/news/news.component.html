@@ -1,0 +1,20 @@
+<section class="page-hero">
+  <div class="container">
+    <h1>News</h1>
+    <p>Latest updates and stories</p>
+  </div>
+</section>
+
+<section class="news-section">
+  <div class="container">
+    <div class="news-list">
+      @for (item of news; track item.title) {
+        <article class="news-card">
+          <div class="news-date">{{ item.date }}</div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.excerpt }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

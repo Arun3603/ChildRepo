@@ -1,0 +1,26 @@
+<section class="page-hero">
+  <div class="container">
+    <h1>Events</h1>
+    <p>Upcoming events and activities</p>
+  </div>
+</section>
+
+<section class="events-section">
+  <div class="container">
+    <div class="events-grid">
+      @for (event of events; track event.title) {
+        <article class="event-card">
+          <div class="event-date">
+            <span class="date-day">{{ event.date.split(' ')[1].replace(',', '') }}</span>
+            <span class="date-month">{{ event.date.split(' ')[0] }}</span>
+          </div>
+          <div class="event-content">
+            <h3>{{ event.title }}</h3>
+            <p class="event-location">{{ event.location }}</p>
+            <p class="event-desc">{{ event.desc }}</p>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
