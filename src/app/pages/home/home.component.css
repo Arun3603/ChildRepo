@@ -4,8 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #1a5f4a 0%, #0d3b2e 100%);
-  background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&h=1080&fit=crop');
+  background: #0b2342;
+  background-image: url('/assets/gallery/poster.png');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -16,7 +16,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(26, 95, 74, 0.9) 0%, rgba(13, 59, 46, 0.85) 100%);
+  background: linear-gradient(135deg, rgba(11, 35, 66, 0.92) 0%, rgba(11, 35, 66, 0.72) 100%);
 }
 
 .hero-content {
@@ -42,8 +42,8 @@
 
 .hero-cta {
   display: inline-block;
-  background: #e8b923;
-  color: #0d3b2e;
+  background: #c7a15a;
+  color: #0b2342;
   padding: 1rem 2rem;
   border-radius: 8px;
   font-weight: 600;
@@ -53,7 +53,7 @@
 
 .hero-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(232, 185, 35, 0.4);
+  box-shadow: 0 8px 24px rgba(199, 161, 90, 0.35);
 }
 
 .section {
@@ -61,12 +61,12 @@
 }
 
 .section-alt {
-  background: #f8faf9;
+  background: #f7f9fc;
 }
 
 .section-title {
   text-align: center;
-  color: #1a5f4a;
+  color: #0b2342;
   font-size: 2rem;
   margin-bottom: 2.5rem;
 }
@@ -87,7 +87,7 @@
 }
 
 .mission-content h2 {
-  color: #1a5f4a;
+  color: #0b2342;
   margin-bottom: 1rem;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .card-item h3 {
-  color: #1a5f4a;
+  color: #0b2342;
   margin-bottom: 0.75rem;
 }
 
@@ -145,7 +145,7 @@
 }
 
 .cta-section h2 {
-  color: #1a5f4a;
+  color: #0b2342;
   margin-bottom: 0.5rem;
 }
 
@@ -170,21 +170,21 @@
 }
 
 .btn-primary {
-  background: #1a5f4a;
+  background: #0b2342;
   color: #fff;
 }
 
 .btn-primary:hover {
-  background: #0d3b2e;
+  background: #081a31;
 }
 
 .btn-outline {
-  border: 2px solid #1a5f4a;
-  color: #1a5f4a;
+  border: 2px solid #0b2342;
+  color: #0b2342;
 }
 
 .btn-outline:hover {
-  background: #1a5f4a;
+  background: #0b2342;
   color: #fff;
 }
 

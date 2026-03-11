@@ -1,5 +1,5 @@
 .page-hero {
-  background: linear-gradient(135deg, #1a5f4a 0%, #0d3b2e 100%);
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-2) 100%);
   color: #fff;
   padding: 3rem 0;
   text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .donation-card h2 {
-  color: #1a5f4a;
+  color: var(--brand-text);
   margin-bottom: 1rem;
 }
 
@@ -47,9 +47,9 @@
 
 .amount-btn {
   padding: 0.75rem 1.5rem;
-  border: 2px solid #1a5f4a;
+  border: 2px solid var(--brand-navy);
   background: #fff;
-  color: #1a5f4a;
+  color: var(--brand-navy);
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
@@ -58,19 +58,19 @@
 
 .amount-btn:hover,
 .amount-btn.selected {
-  background: #1a5f4a;
+  background: var(--brand-navy);
   color: #fff;
 }
 
 .donation-info {
-  background: #f8faf9;
+  background: var(--surface-alt);
   padding: 1.5rem;
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
 
 .donation-info h3 {
-  color: #1a5f4a;
+  color: var(--brand-text);
   margin-bottom: 0.75rem;
 }
 

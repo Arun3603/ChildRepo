@@ -1,6 +1,6 @@
-# The Child Trust - Angular Website
+# Kalvi Aazhi - Angular Website
 
-A static Angular website for The Child Trust with image upload capability. Images are stored in the `uploads/gallery` folder within the project.
+A static Angular website for Kalvi Aazhi Education & Charitable Trust. Images are stored in `src/assets/gallery` and displayed in the Gallery page.
 
 ## Features
 
@@ -9,35 +9,28 @@ A static Angular website for The Child Trust with image upload capability. Image
 - **Donation** – Donation options and information
 - **Trustees** – Board members list
 - **News** – Latest updates and stories
-- **Gallery** – Image gallery with upload (images stored in project folder)
+- **Gallery** – Static image gallery (from `src/assets/gallery`)
 
 ## Run the Application
 
-### Development (with image upload)
-
-For image upload to work, run both the Angular dev server and the upload API:
+### Development
 
 ```bash
-# Terminal 1: Angular app
 npm start
-
-# Terminal 2: Upload server (for Gallery)
-npm run upload-server
 ```
 
 Then open http://localhost:4200
 
-### Production (SSR with upload)
+### Production (SSR)
 
 ```bash
 npm run build
 npm run serve:ssr:FirstNew
 ```
 
-Open http://localhost:4000 — the built-in server handles both the app and image upload API.
+Open http://localhost:4000
 
-## Image Upload
+## Gallery Images
 
-- Images are saved to `uploads/gallery/` in the project root
-- Metadata (title, description) is stored in `uploads/gallery/metadata.json`
-- Supported formats: JPEG, PNG, GIF, WebP (max 5MB)
+- Add images to `src/assets/gallery/`
+- The Gallery page displays images from that folder

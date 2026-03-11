@@ -28,9 +28,6 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
-# Uploaded images (stored in project folder)
-/uploads
-
 # Miscellaneous
 /.angular/cache
 .sass-cache/

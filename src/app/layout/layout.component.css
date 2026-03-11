@@ -5,7 +5,7 @@
 }
 
 .top-bar {
-  background: #0d3b2e;
+  background: #0b2342;
   color: rgba(255, 255, 255, 0.9);
   padding: 0.5rem 0;
   font-size: 0.875rem;
@@ -44,14 +44,41 @@
 
 .logo {
   text-decoration: none;
-  color: #1a5f4a;
+  color: #0b2342;
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .logo:hover {
-  color: #0d3b2e;
+  color: #081a31;
+}
+
+.logo-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.logo-subtitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(11, 35, 66, 0.7);
 }
 
 .menu-toggle {
@@ -67,7 +94,7 @@
 .menu-toggle span {
   width: 24px;
   height: 2px;
-  background: #1a5f4a;
+  background: #0b2342;
   transition: 0.3s;
 }
 
@@ -86,7 +113,7 @@
 
 .nav a:hover,
 .nav a.active {
-  color: #1a5f4a;
+  color: #0b2342;
 }
 
 .main {
@@ -94,7 +121,7 @@
 }
 
 .footer {
-  background: #0d3b2e;
+  background: #0b2342;
   color: rgba(255, 255, 255, 0.9);
   padding: 3rem 0 1.5rem;
   margin-top: auto;
@@ -114,7 +141,7 @@
 }
 
 .footer-section h4 {
-  color: #e8b923;
+  color: #c7a15a;
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
@@ -129,7 +156,7 @@
 }
 
 .footer-section a:hover {
-  color: #e8b923;
+  color: #c7a15a;
 }
 
 .footer-bottom {

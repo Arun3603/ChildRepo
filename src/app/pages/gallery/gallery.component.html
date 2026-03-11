@@ -7,61 +7,25 @@
 
 <section class="gallery-section">
   <div class="container">
-    <!-- Gallery grid - images from The Child Trust -->
+    <!-- Gallery grid - images from the Trust -->
     <div class="gallery-intro">
-      <h2>Images from The Child Trust</h2>
+      <h2>Images from the Trust</h2>
       <p>Photos from our programmes, events and initiatives</p>
     </div>
+
     <div class="gallery-grid">
-      @if (loading) {
-        <p class="gallery-loading">Loading images...</p>
-      } @else if (images.length === 0) {
-        <p class="gallery-empty">No images yet. Use the upload option below to add photos.</p>
+      @if (images.length === 0) {
+        <p class="gallery-empty">No images found. Add images to <code>src/assets/gallery</code>.</p>
       } @else {
-        @for (img of images; track img.filename) {
+        @for (img of images; track img.url) {
           <div class="gallery-item">
-            <img [src]="img.url" [alt]="img.title || img.filename" loading="lazy">
+            <img [src]="img.url" [alt]="img.title || 'Gallery image'" loading="lazy">
             @if (img.title) {
               <p class="gallery-caption">{{ img.title }}</p>
             }
           </div>
         }
       }
-    </div>
-
-    <!-- Upload option - at bottom -->
-    <div class="upload-card">
-      <h3>Upload Image</h3>
-      <p class="upload-hint">Add photos to the gallery. Images are stored in the project folder.</p>
-      <div class="upload-form">
-        <div class="upload-field">
-          <label>Choose image (JPG, PNG, GIF, WebP)</label>
-          <input type="file" accept="image/jpeg,image/png,image/gif,image/webp" (change)="onFileSelected($event)">
-          @if (selectedFile) {
-            <span class="file-name">{{ selectedFile.name }}</span>
-          }
-        </div>
-        <div class="upload-field">
-          <label>Title (optional)</label>
-          <input type="text" [(ngModel)]="title" placeholder="Image title">
-        </div>
-        <div class="upload-field">
-          <label>Description (optional)</label>
-          <textarea [(ngModel)]="description" placeholder="Brief description" rows="2"></textarea>
-        </div>
-        @if (uploadError) {
-          <p class="upload-error">{{ uploadError }}</p>
-        }
-        @if (uploadSuccess) {
-          <p class="upload-success">Image uploaded successfully!</p>
-        }
-        <div class="upload-actions">
-          <button class="btn btn-primary" (click)="uploadImage()" [disabled]="!selectedFile || uploading">
-            {{ uploading ? 'Uploading...' : 'Upload' }}
-          </button>
-          <button class="btn btn-outline" (click)="clearUpload()">Clear</button>
-        </div>
-      </div>
     </div>
   </div>
 </section>

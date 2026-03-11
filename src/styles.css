@@ -2,11 +2,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --brand-navy: #0b2342;
+  --brand-navy-2: #081a31;
+  --brand-gold: #c7a15a;
+  --brand-text: #0b2342;
+  --surface: #ffffff;
+  --surface-alt: #f7f9fc;
+}
+
 body {
   margin: 0;
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: #333;
   line-height: 1.5;
+  background: var(--surface);
 }
 
 .container {
