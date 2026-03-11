@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background: #0b2342;
-  background-image: url('assets/gallery/poster.png');
+  background-image: url('../../../assets/gallery/poster.png');
   background-size: cover;
   background-position: center;
   color: #fff;
