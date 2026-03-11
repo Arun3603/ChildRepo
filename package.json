@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:FirstNew": "node dist/first-new/server/server.mjs"
+    "serve:ssr:FirstNew": "node dist/first-new/server/server.mjs",
+     "deploy": "ng build --configuration production --base-href /ChildRepo/ && npx angular-cli-ghpages --dir=dist/first-new/browser"
   },
   "private": true,
   "dependencies": {
