@@ -19,7 +19,7 @@
       } @else {
         @for (img of images; track img.url) {
           <div class="gallery-item">
-            <img [src]="img.url" [alt]="img.title || 'Gallery image'" loading="lazy">
+            <img [src]="img.url" [alt]="img.title || 'Gallery image'" loading="lazy" (click)="openModal(img)">
             @if (img.title) {
               <p class="gallery-caption">{{ img.title }}</p>
             }
@@ -29,3 +29,12 @@
     </div>
   </div>
 </section>
+
+@if (showModal) {
+  <div class="modal-overlay" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <img [src]="selectedImage" alt="Selected image">
+      <button class="close-btn" (click)="closeModal()">×</button>
+    </div>
+  </div>
+}

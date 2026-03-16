@@ -25,4 +25,17 @@ export class GalleryComponent {
     { url: 'assets/gallery/image11.jpeg', title: ' ' },
     
   ];
+
+  selectedImage: string | null = null;
+  showModal = false;
+
+  openModal(img: { url: string; title?: string }) {
+    this.selectedImage = img.url;
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+    this.selectedImage = null;
+  }
 }
