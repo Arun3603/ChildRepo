@@ -9,9 +9,11 @@ import { Component } from '@angular/core';
 })
 export class TrusteesComponent {
   trustees = [
-    { name: 'Dr. Rajesh Kumar', role: 'Chairperson', bio: 'Over 20 years of experience in child rights advocacy.' },
-    { name: 'Ms. Priya Sharma', role: 'Secretary', bio: 'Expert in education and community development.' },
-    { name: 'Mr. Amit Singh', role: 'Treasurer', bio: 'Finance and governance specialist.' },
-    { name: 'Dr. Sunita Patel', role: 'Trustee', bio: 'Public health and nutrition advocate.' }
+    { name: 'M. THANGARAJ', role: 'Secretary', bio: 'Educationist & Social Worker.' },
+    { name: 'J. STEEPHEN RINOCH', role: 'Joint Secretary', bio: 'Educationist & Social Worker.' },
+    { name: 'M. KARTHIK', role: 'Executive Trustee', bio: 'Educationist & Social Worker.' },
+    { name: 'M. ARCHANA', role: 'President', bio: 'Educationist & Social Worker.' },
+    { name: 'G. SOMASUNDARAM', role: 'Treasurer', bio: 'Educationist & Social Worker.' },
+    { name: 'VS. SENTHIL KUMAR', role: 'Trustee', bio: 'Businessman & Social Worker.' }
   ];
 }
