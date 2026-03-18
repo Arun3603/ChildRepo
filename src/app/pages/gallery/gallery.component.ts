@@ -23,6 +23,20 @@ export class GalleryComponent {
     { url: 'assets/gallery/image9.jpeg', title: ' ' },
     { url: 'assets/gallery/image10.jpeg', title: ' ' },
     { url: 'assets/gallery/image11.jpeg', title: ' ' },
+    { url: 'assets/gallery/image12.jpeg', title: ' ' },
+    { url: 'assets/gallery/image13.jpeg', title: ' ' },
+    { url: 'assets/gallery/image14.jpeg', title: ' ' },
+    { url: 'assets/gallery/image15.jpeg', title: ' ' },
+    { url: 'assets/gallery/image16.jpeg', title: ' ' },
+    { url: 'assets/gallery/image17.jpeg', title: ' ' },
+    { url: 'assets/gallery/image18.jpeg', title: ' ' },
+    { url: 'assets/gallery/image19.jpeg', title: ' ' },
+    { url: 'assets/gallery/image20.jpeg', title: ' ' },
+    { url: 'assets/gallery/image21.jpeg', title: ' ' },
+    { url: 'assets/gallery/image22.jpeg', title: ' ' },
+    { url: 'assets/gallery/image23.jpeg', title: ' ' },
+    { url: 'assets/gallery/image24.jpeg', title: ' ' },
+    { url: 'assets/gallery/image25.jpeg', title: ' ' },
     
   ];
 

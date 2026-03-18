@@ -1,26 +1,48 @@
 <section class="page-hero">
-  <div class="container">
-    <h1>Events</h1>
-    <p>Upcoming events and activities</p>
+  <div class="container text-center">
+    <h1>Our Objectives</h1>
+    <p>Empowering rural education and building a brighter future</p>
   </div>
 </section>
 
-<section class="events-section">
+<section class="section objectives-section">
   <div class="container">
-    <div class="events-grid">
-      @for (event of events; track event.title) {
-        <article class="event-card">
-          <div class="event-date">
-            <span class="date-day">{{ event.date.split(' ')[1].replace(',', '') }}</span>
-            <span class="date-month">{{ event.date.split(' ')[0] }}</span>
-          </div>
-          <div class="event-content">
-            <h3>{{ event.title }}</h3>
-            <p class="event-location">{{ event.location }}</p>
-            <p class="event-desc">{{ event.desc }}</p>
-          </div>
-        </article>
-      }
+    
+    <h2 class="section-title text-center">What We Aim To Do</h2>
+
+    <div class="objectives-grid">
+
+      <div class="objective-card">
+        <div class="icon">🎓</div>
+        <p>Support rural students in achieving academic success.</p>
+      </div>
+
+      <div class="objective-card">
+        <div class="icon">📘</div>
+        <p>Provide guidance for higher education and competitive exams.</p>
+      </div>
+
+      <div class="objective-card">
+        <div class="icon">🗣️</div>
+        <p>Conduct spoken English and skill development programs.</p>
+      </div>
+
+      <div class="objective-card">
+        <div class="icon">📊</div>
+        <p>Organize career guidance and awareness programs.</p>
+      </div>
+
+      <div class="objective-card">
+        <div class="icon">📚</div>
+        <p>Distribute educational materials to underprivileged students.</p>
+      </div>
+
+      <div class="objective-card">
+        <div class="icon">💻</div>
+        <p>Promote digital literacy in rural areas.</p>
+      </div>
+
     </div>
+
   </div>
 </section>
