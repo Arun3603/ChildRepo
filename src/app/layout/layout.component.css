@@ -15,12 +15,21 @@
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .top-bar-item {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.top-bar-translate {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .top-bar-item svg {
